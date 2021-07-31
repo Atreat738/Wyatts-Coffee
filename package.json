@@ -1,0 +1,24 @@
+{
+  "name": "wyatts-coffee",
+  "version": "1.0.0",
+  "description": "Wyatt's Coffee, a demo restaurant page using webpack and javascript!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atreat738/Wyatts-Coffee.git"
+  },
+  "author": "Atreat738",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atreat738/Wyatts-Coffee/issues"
+  },
+  "homepage": "https://github.com/Atreat738/Wyatts-Coffee#readme",
+  "devDependencies": {
+    "webpack": "^5.47.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

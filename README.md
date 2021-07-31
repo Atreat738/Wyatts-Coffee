@@ -1,0 +1,1 @@
+Wyatt's Coffee, a demo restaurant page using webpack and javascript!
