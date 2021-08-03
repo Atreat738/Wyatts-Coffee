@@ -24,22 +24,29 @@ header ul {
     margin: 0px 25px;
  }
 
- .menuLink:hover, .aboutLink:hover, .contactLink:hover {
+ .menuLink:hover, .aboutLink:hover, .contactLink:hover, h1:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
- .aboutBackground {
-    background: url('../src/images/CoffeeShopInterior.png') no-repeat;
-    background-size: cover;
-    /* background-position: 50% 35%; */
- }
-
 .homeBackground {
-    background: url('../src/images/BlackWhiteCoffee.png') no-repeat; 
+    background: url('../src/images/BlackWhiteCoffee.png') no-repeat center center; 
     background-size: cover;
-    background-position: 50% 35%;
 }
+
+.menuBackground {
+    background: url('../src/images/SampleCoffee.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+ .aboutBackground {
+    background: url('../src/images/CoffeeShopInterior.png') no-repeat center center fixed;
+    background-size: cover;
+ }
+ .contactUsBackground {
+    background: url('../src/images/ShareCoffee.png') no-repeat center center fixed;
+    background-size: cover;
+ }
 
 #content {
     width: 100%;
@@ -48,5 +55,9 @@ header ul {
 }
 
 h5 {
+    margin-top: 0;
+}
+
+p {
     margin-top: 0;
 }

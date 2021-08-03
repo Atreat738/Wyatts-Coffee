@@ -1,5 +1,7 @@
 import homePage from './home.js';
+import menu from './menu.js';
 import about from './about.js';
+import contactUs from './contactus.js';
 
 
 export default function header() {
@@ -28,6 +30,12 @@ export default function header() {
     menuLink.textContent = 'Menu';
     menuLink.classList.add('menuLink');
 
+    menuLink.addEventListener('click', () => {
+        let content = document.querySelector('#content');
+        document.body.removeChild(content);
+        document.body.appendChild(menu());
+    });
+
     aboutLink.textContent = 'About';
     aboutLink.classList.add('aboutLink');
 
@@ -39,6 +47,12 @@ export default function header() {
 
     contactLink.textContent = 'Contact Us';
     contactLink.classList.add('contactLink');
+
+    contactLink.addEventListener('click', () => {
+        let content = document.querySelector('#content');
+        document.body.removeChild(content);
+        document.body.appendChild(contactUs());
+    });
 
     headerul.appendChild(menuLink);
     headerul.appendChild(aboutLink);
