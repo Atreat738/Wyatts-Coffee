@@ -1,10 +1,11 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
-    background: url('../src/images/BlackWhiteCoffee.png') no-repeat;
-    background-size: cover;
-    background-position: 50% 35%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
+
 
 header {
     display: flex;
@@ -22,3 +23,30 @@ header ul {
  header ul li {
     margin: 0px 25px;
  }
+
+ .menuLink:hover, .aboutLink:hover, .contactLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ .aboutBackground {
+    background: url('../src/images/CoffeeShopInterior.png') no-repeat;
+    background-size: cover;
+    /* background-position: 50% 35%; */
+ }
+
+.homeBackground {
+    background: url('../src/images/BlackWhiteCoffee.png') no-repeat; 
+    background-size: cover;
+    background-position: 50% 35%;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+h5 {
+    margin-top: 0;
+}
