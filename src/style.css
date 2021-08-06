@@ -87,6 +87,35 @@ header ul {
     background: url('../src/images/CoffeeShopInterior.png') no-repeat center center fixed;
     background-size: cover;
  }
+
+ .aboutContainerDiv {
+    font-family: 'Teko', sans-serif;
+    margin: auto;
+    font-size: 1.5rem;
+    background-color: #002366;
+    color: white;
+    opacity: 0.8;
+    height: 100%;
+    width: 30%;
+    border: 2px solid black;
+ }
+
+ .aboutImageDiv {
+     opacity: 1.0 !important;
+     width: 100%;
+     height: 50%;
+     background: url('../src/images/OrangeCat.png') no-repeat center center;
+     background-size: contain;
+ } 
+
+ .aboutImageCaption {
+     text-align: center;
+ }
+
+ .aboutText {
+     opacity: 0.85;
+ }
+
  .contactUsBackground {
     background: url('../src/images/ShareCoffee.png') no-repeat center center fixed;
     background-size: cover;
