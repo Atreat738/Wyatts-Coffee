@@ -34,6 +34,11 @@ header ul {
     background-size: cover;
 }
 
+.homeDesc {
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+}
+
 .menuBackground {
     background: url('../src/images/SampleCoffee.png') no-repeat center center fixed;
     background-size: cover;
