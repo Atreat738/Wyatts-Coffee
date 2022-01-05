@@ -1,3 +1,10 @@
+:root {
+    --fs-800: 2.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.5rem;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -21,8 +28,9 @@ header {
 header ul {
     display: flex;
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: var(--fs-400);
 }
+
  header ul li {
     margin: 0px 25px;
  }

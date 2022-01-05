@@ -2,8 +2,6 @@ import './style.css';
 import header from './header.js';
 import homePage from './home.js';
 
-//import aboutLink from './about.js';
-
 
 import blackWhiteCoffee from './images/BlackWhiteCoffee.png';
 
