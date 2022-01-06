@@ -20,20 +20,20 @@ h5, p {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #d3d3d3;
     border-bottom: 2px solid black;
     font-family: 'Lobster', cursive;
+    
 }
 
 header ul {
     display: flex;
+    justify-content: space-around;
+    min-width: 20%;
     list-style-type: none;
     font-size: var(--fs-400);
 }
-
- header ul li {
-    margin: 0px 25px;
- }
 
  .menuLink:hover, .aboutLink:hover, .contactLink:hover, h1:hover {
     text-decoration: underline;
@@ -46,10 +46,12 @@ header ul {
 }
 
 .homeDesc {
-    font-size: 2rem;
+    font-size: var(--fs-600);
     font-family: 'Teko', sans-serif;
 }
 
+/* END HOME stylings 
+   BEGIN MENU stylings */
 .menuBackground {
     background: url('../src/images/SampleCoffee.png') no-repeat center center fixed;
     background-size: cover;
@@ -64,7 +66,7 @@ header ul {
 
 .menuBoard {
     font-family: 'Teko', sans-serif;
-    margin-top: 15vh;
+    margin-top: 2.5em;
     border: 2px solid black;
     background-color: #fff8e7;
     opacity: 0.75;
@@ -74,45 +76,60 @@ header ul {
 
 .drinkH2 {
     font-family: 'Lobster', cursive;
-    font-size: 1.75rem;
+    font-size: var(--fs-500);
     text-decoration: underline;
 }
 
 .foodH2 {
     font-family: 'Lobster', cursive;
-    font-size: 1.75rem;
+    font-size: var(--fs-500);
     text-decoration: underline;
 }
 
 .menuLi {
     list-style: none;
     opacity: 0.85;
-    font-size: 1.5rem;
+    font-size: var(--fs-400);
     margin: 5px;
 }
 
+/* END MENU stylings 
+   BEGIN ABOUT stylings */
+
  .aboutBackground {
-    background: url('../src/images/CoffeeShopInterior.png') no-repeat center center fixed;
+    background: url('../src/images/CoffeeShopInterior.png') no-repeat center center;
     background-size: cover;
+    overflow: scroll;
  }
 
+ /* Need to create an aboutBoard that hosts the info/wyatt picture, place inside aboutcontainerdiv*/
  .aboutContainerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .aboutBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Teko', sans-serif;
-    margin: auto;
-    font-size: 1.5rem;
+    margin-top: 2.5em;
+    font-size: var(--fs-400);
     background-color: #008b8b;
     color: white;
     opacity: 0.8;
-    height: 100%;
-    width: 30%;
-    padding: 10px;
+    height: 50%;
+    max-width: 30%;
+    padding: 1.25em;
     border: 2px solid black;
  }
 
  .aboutImageDiv {
      opacity: 1.0 !important;
-     width: 100%;
-     height: 50%;
+     width: 15em;
+     height: 15em;
      background: url('../src/images/OrangeCat.png') no-repeat center center;
      background-size: contain;
  } 
@@ -124,6 +141,9 @@ header ul {
  .aboutText {
      opacity: 0.85;
  }
+
+ /* END ABOUT stylings 
+   BEGIN CONTACT stylings */
 
  .contactUsBackground {
     background: url('../src/images/ShareCoffee.png') no-repeat center center fixed;
@@ -142,7 +162,7 @@ header ul {
     border-radius: 10px;
     width: 30%;
     height: 50%;
-    margin-top: 17.5vh;
+    margin-top: 3em;
     padding: 20px;
     background-color: #008b8b;
     opacity: 0.8;
@@ -151,13 +171,13 @@ header ul {
 
  .contactH2 {
     font-family: 'Lobster', cursive;
-    font-size: 2.5rem;
+    font-size: var(--fs-800);
     text-decoration: underline;
  }
  
  .contactInfo {
     font-family: 'Teko', sans-serif;
-    font-size: 1.75rem;
+    font-size: var(--fs-500);
     letter-spacing: 2.5px;
  }
 

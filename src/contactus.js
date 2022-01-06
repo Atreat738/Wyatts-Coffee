@@ -4,7 +4,6 @@ export default function contactUs() {
     content.id = 'content';
     document.body.appendChild(content);
 
-
     const contactContainerDiv = document.createElement('div');
     contactContainerDiv.classList.add('contactContainerDiv');
     content.appendChild(contactContainerDiv);
