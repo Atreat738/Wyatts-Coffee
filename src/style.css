@@ -30,9 +30,12 @@ header {
 header ul {
     display: flex;
     justify-content: space-around;
-    min-width: 20%;
     list-style-type: none;
     font-size: var(--fs-400);
+}
+
+header ul li {
+    margin: 0 1em;
 }
 
  .menuLink:hover, .aboutLink:hover, .contactLink:hover, h1:hover {
@@ -53,8 +56,9 @@ header ul {
 /* END HOME stylings 
    BEGIN MENU stylings */
 .menuBackground {
-    background: url('../src/images/SampleCoffee.png') no-repeat center center fixed;
+    background: url('../src/images/SampleCoffee.png') no-repeat center center;
     background-size: cover;
+    overflow: scroll;
 }
 
 .menuContainerDiv {
@@ -120,16 +124,21 @@ header ul {
     background-color: #008b8b;
     color: white;
     opacity: 0.8;
-    height: 50%;
-    max-width: 30%;
+    max-width: 35%;
     padding: 1.25em;
     border: 2px solid black;
  }
 
+ @media (max-width: 650px) {
+     .aboutBoard {
+         max-width: 50%;
+     }
+ }
+
  .aboutImageDiv {
      opacity: 1.0 !important;
-     width: 15em;
-     height: 15em;
+     width: 12.5em;
+     height: 12.5em;
      background: url('../src/images/OrangeCat.png') no-repeat center center;
      background-size: contain;
  } 
@@ -146,8 +155,9 @@ header ul {
    BEGIN CONTACT stylings */
 
  .contactUsBackground {
-    background: url('../src/images/ShareCoffee.png') no-repeat center center fixed;
+    background: url('../src/images/ShareCoffee.png') no-repeat center center;
     background-size: cover;
+    overflow: scroll;
  }
 
  .contactContainerDiv {
@@ -160,10 +170,9 @@ header ul {
  .contactBoard {
     border: 4px solid white;   
     border-radius: 10px;
-    width: 30%;
-    height: 50%;
-    margin-top: 3em;
-    padding: 20px;
+    min-width: 30%;
+    margin-top: 4em;
+    padding: 1.75em;
     background-color: #008b8b;
     opacity: 0.8;
     color: white;
@@ -178,7 +187,7 @@ header ul {
  .contactInfo {
     font-family: 'Teko', sans-serif;
     font-size: var(--fs-500);
-    letter-spacing: 2.5px;
+    letter-spacing: 0.15em;
  }
 
 #content {
